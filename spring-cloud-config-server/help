@@ -1,0 +1,15 @@
+//for testing..here limits-service is name of the file storing configuration
+http://localhost:8888/limits-service/default
+
+//limit.propertie is the defalt configuration file 
+for production or qa environment you can create separate files and in url replace default by dev or qa etc
+
+//Limits service with >=2.4.0 of SPRING BOOT
+If you are using 2.4.0, you need to add this dependency to the pom.xml:
+
+HINT: Make sure that you RESTART the server after saving your pom.xml
+
+<dependency>
+   <groupId>org.springframework.cloud</groupId>
+   <artifactId>spring-cloud-starter-bootstrap</artifactId>
+</dependency>
