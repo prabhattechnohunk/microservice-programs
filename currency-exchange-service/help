@@ -1,0 +1,13 @@
+###
+server.port is a way to define a value for the tomcat port of your service.
+ It is used in "application.properties" file. If you do not fix this property, the port 8080 is chosen by default.
+
+local.server.port is used to recover the value of the actual running port(not always from application.properties.I
+if u run different instance at different port it will give you that port no)
+
+#
+ An environment variable is a variable whose value is set outside the program, typically through
+  functionality built into the operating system or microservice.
+  #
+  Ideally, application.properties contains all common properties which are accessible for all environments
+   and environment related properties only works on specifies environment.
